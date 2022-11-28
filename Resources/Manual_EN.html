@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+
+.collapsible {
+  background-color: #c9f7ff;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  border-radius: 12px;
+}
+
+.collapsible:hover {
+  background-color: #65b6c9;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f5f7f7;
+}
+
+div.p1 {
+	padding-left: 15px;
+}
+
+p.headline {
+	font-size: 18px;
+}
+
+.red {
+	color: red;
+	}
+
+.blue {
+	color: blue;
+	}
+	
+.green {
+	color: green;
+	}	
+	
+.gray {
+	color: gray;
+	}
+	
+.ocker {
+	color: #b88428;
+	}
+	
+ol, ul {
+	line-height:200%;
+{
+
+
+
+</style>
+</head>
+<body>
+
+<div>
+<p class="headline"><b>Introduction</b></p>
+</div>
+<br>
+<div class="p1">
+	<div>
+		<!---
+=======
+	<div>
+>>>>>>> ff9cbe807b9cfbdf552b1d8c43bf691dc0626973
+	<b>A Covid-19 Analysis and Prediction Tool by the University Medical Center Freiburg</b> 
+	</div>
+
+	<p>
+	After fetching the latest Data from
+	<ul>
+	<li>the Robert-Koch Institute (RKI) and
+	<li>the Register of the German Interdisciplinary Association for Intensive Care and 
+		Emergency Medicine (DIVI Intensive Care Registry: Deutsche Interdisziplinäre 
+		Vereinigung für Intensiv- und Notfallmedizin, DIVI-Intensivregister)
+	</ul>
+	the dashboard is ready for use.
+	</p>
+	
+	<br>
+	<p>The <b>graphical user interface</b> consists of two sections: A <b>control section</b> (left) and a <b>result section</b> (right).
+		<br>The result section further features multiple tabs at the top (Incidence, Effective R-Value etc.).
+
+	<p>As the results displayed in the individual tabs build on each other, we recommend to review the tabs successivley from left to right
+		for each analysis you run. 
+		<br> Some tabs additionally allow the manipulation of values or contain further options, which affect results in downstream tabs. For example: Changing the vacciantion frequency in the "Vaccination" tab will 
+			result in changes in the "Incidence Forecast" tab.<br>
+	
+	<br>The displayed results are recomputed dynamically with new input, manually starting a new analysis is not required.  
+	
+	<br>All tabs feature a manually adjustable time-window on the x-axis.
+	
+	<br><br>The functionality of the tabs is explained in detail below.</p>
+
+	<br>
+	--->
+		The Analysis and Prediction Tool for COVID-19 Cases can be reached via the following link:<br>
+
+	<p>
+	<a href="https://iuk-forecast.uniklinik-freiburg.de/">https://iuk-forecast.uniklinik-freiburg.de/</a><br>
+	</p>
+
+	The website opens in English by default.
+
+	<p>A progress bar appears in the bottom right-hand corner of the screen (Fetching RKI data…). </p>
+
+	<p>
+	After uploading the most recent data from
+	<ul>
+	<li>the Robert-Koch-Institut and 
+	<li>the Register of the German Interdisciplinary Association for Intensive Care and Emergency Medicine <br> (DIVI Intensive Care Registry: Deutsche Interdisziplinäre Vereinigung für Intensiv- und Notfallmedizin, DIVI-Intensivregister), 
+	</ul>
+	the language will automatically switch to German. The application is now ready for use.
+	</p>
+
+	<p>To change the language click on the Flag.</p>
+
+	<p>The user interface consists of a grey shaded control panel (on the left) and a results panel (on the right).</p>
+
+	<p>In the smartphone application, the panels are arranged in vertical order.</p>
+
+	<p>The results panel has eight tabs along the upper margin.</p>
+
+	<p>To run the analysis and prediction tool, we recommend using the first five tabs (from left to right), starting with Incidence. <br>
+		In the following, we will introduce you to all functions in that order. </p>
+
+</div>
+</div>
+
+<!---
+<button type="button" class="collapsible">Quick-start guide</button>
+<div class="content">
+	<br>
+	
+	<span><b>A) Control section</b> </span>
+	
+	<p>
+		<ol>
+			<li>Choose <b>states (Bundesländer) and districts (Landkreise)</b> for which you wish to produce a forecast. 
+				<br>Alternatively, you can select all states/districts at once for a nationwide analysis. 
+			<li>The <b>Forecast start date</b> can be adjusted from the most recent RKI data set into the past.
+			<li>The <b>Forecast length</b> defines the window for the forecast, beginning with the start date (default 30 days).
+			<li><b>Number of runs</b> indicates the iterations for the simulation (default 5 runs).
+			<br>
+		</ol>
+	</p>
+	
+	<div class="box">
+		<img src="GUI_EN.png" alt="GUI" width="800px" border="1px dashed #f7a239">
+	</div>
+	<br>
+	
+	<span><b>B) Result section</b> </span>
+		<p>
+		<ul>
+			<li>
+				<b>Incidence:</b>
+					<br> This tab displays the reported number of cases. 
+					<br> The <span class="blue">blue line</span> shows the daily incidence as it was reported to the RKI,
+						the <b>black line</b> shows the 7-day average per 100k people. 
+					<br>
+					
+					<div class="box">
+<<<<<<< HEAD
+						<img src="Incidence_EN.png" alt="GUI" width="800px" border="1px dashed #f7a239">
+					</div>
+					<br>
+			<li>
+				<b>Effective R-Value (EpiStim):</b>
+					<br> This tab displays the documented R-Value as well as a Nowcast, which compensates for reporting delays of the most current data. 
+					<br> The <b>black line</b> represents the average R-Value, whereas the gray area indictes the 95% confidence interval (CI).
+					<br> The <span class="red">red line</span> denotes a R-Value of 1. Values above or below this line generally translate to and 
+						increse or decrease in future cases, respetcively.	
+					<br>
+					<br><i>Optional:</i>The menu in the lower right-hand corner allows you to include the influence of "Variants of Concern".
+										<br>To do so, specify the proportion of a given VoC in the population of infected as it was documented	
+										at a point in the past, as well as the additional transmissibility. 										
+					<div class="box">
+						<img src="RValue_EN.png" alt="GUI" width="800px" border="1px dashed #f7a239">
+					</div>
+
+					<br>
+						
+			<li>
+				<b>Vaccination</b>
+					<br> This tab shows the accumulated total <span class="green">number of vaccinations</span> for both first- and second-dose recipients.. 
+						<br>Additionally, a forecast is displayed to the right of the vertical line, based on the current rate of vaccinations.
+						 <br>This number can be adjusted to simulate different trends.
+					
+					<div class="box">
+						<img src="Vaccination_EN.png" alt="GUI" width="800px" border="1px dashed #f7a239">
+
+					</div>
+
+					<br>
+						
+			<li>
+				<b>Incidence Foreacst:</b>
+					<br> This tab contains all reported cases as well as a<span class="ocker">
+						forecast</span>, 
+						based on the R-Value and the rate of vaccinations. 
+					<br>Additionaly, the curve can be adjusted to simulate the frequency of reporting to the RKI.
+					<div class="box">
+
+						<img src="IncidenceForecast_EN.png" alt="GUI" width="800px" border="1px dashed #f7a239">
+
+					</div>
+
+					<br>
+					
+			<li>
+				<b>Bed Forecast:</b>
+					<br> This tab shows an estimate of the beds occupied by Covid patients on  
+						<span class="red">intensive care wards (ICU)</span> and <span class="blue">general wards</span>.
+						<br> The lines represent the median, while the shaded areas indicate the 95th, 75th, 25th and 5th percentile.
+					<div class="box">
+					<img src="BedForecast_EN.png" alt="GUI" width="800px" border="1px dashed #f7a239">
+					
+					</div>
+					
+					<b>Recommended:</b> If you wish to validate the forecast, you can upload the true previous bed occupancy 
+					contained within a *.csv file with the following configuration:
+					<br>					
+					<br>
+	<dl>
+		<dl>
+			<dd>
+			<table cellpadding="4" cellspacing="0">
+				<col >
+				<col >
+				<col >
+				<tr valign="top">
+					<td width="133" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p><b>Date</b></p>
+					</td>
+					<td width="59" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p><b>ICU</b></p>
+					</td>
+					<td width="75" style="border: 1px solid #000000; padding: 0.04in">
+						<p><b>Normal</b></p>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td width="133" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>2021-02-03</p>
+					</td>
+					<td width="59" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>18</p>
+					</td>
+					<td width="75" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+						<p>15</p>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td width="133" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>2021-02-04</p>
+					</td>
+					<td width="59" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>15</p>
+					</td>
+					<td width="75" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+						<p>18</p>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td width="133" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>...</p>
+					</td>
+					<td width="59" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>...</p>
+					</td>
+					<td width="75" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+						<p>...</p>
+					</td>
+				</tr>
+
+			</table>
+			</dl>
+		</dl>
+
+	
+
+					<br>
+		</ul>
+	</p>
+	
+</div>
+
+--->
+
+<button type="button" class="collapsible">Incidence</button>
+<div class="content">
+  <br>
+  <p><i><b>In the control panel (left side)</b></i></p>
+		<p><b>Choose a state</b> from the drop down menu and <b>enter the district(s)</b> of the catchment 
+			area for which you wish to make a prediction (LK = Landkreis, SK = Stadtkreis). .
+			Optionally, checking the box Select all states/Select all districts also allows for national 
+			or state-wide predictions.</p>
+
+		<p>The selected states and districts will be checked with a tick in the corresponding fields of the drop down menu. </p>
+
+		<p>
+		<ul>
+		<li><b>Population</b> shows the population size in the selected catchment area as reported by the authorities.
+
+		<li><b>ICU bed occupancy (DIVI registry)</b> provides the number of ICU beds currently occupied by 
+			Covid-19 patients in the selected areas.
+
+		<li>The <b>Forecast start date</b> corresponds to the last calendar day for which RKI data are 
+			available (usually the previous day). This can be backdated as desired.
+
+		<li>The <b>Forecast length (days)</b> and the <b>Number of runs</b> can be set and selectively 
+			changed. In the default settings, the forecast length is set to 30 days and the number of simulations to five runs.
+			The limits of these functions are 365 days and 100 runs.
+		</ul>
+
+		<br>
+
+		<p><i>In the results panel (right side):</i></p>
+
+		<p>The result of your search will appear. The <b>blue line</b> in the graph represents the 
+			<b>epidemiological curve</b> of cases reported for each calendar day. The scale is on the <i>left</i> y-axes.
+		<br>The <b>black line</b> illustrates the <b>seven-day incidence</b> (per 100,000 inhabitants) 
+			for each calendar day. The scale is on the <i>right</i> y-axes.</p>
+
+		<p>By using the slider beneath the chart, calendar periods can be narrowed down to improve 
+			resolution and visibility.</p>
+
+		<p>The <b>blue field</b> beneath the slider shows the <b>number of newly reported infections</b>.</p>
+
+		<p>The <b>grey field</b> beneath the slider shows the <b>current seven-day incidence</b> (per 100.000).</p>
+
+
+	<br>
+</div>
+<button type="button" class="collapsible">Effective R-Value (EpiStim)</button>
+<div class="content">
+
+	<br>
+	<p>The resulting figure illustrates the <b>time-dependent effective R-value</b> for each calendar day, including the 95% in grey shade 
+		bordered by a stippled line.</p>
+
+	<p>The <b>vertical grey line</b> corresponds to the date of the most recent R-value (previous day). This value is also rounded 
+		to two decimal points in the grey field.</p>
+
+	<p>To compensate for the RKI-dependent reporting delay, a Nowcast R-value is specified. This serves as the baseline for 
+		the forward predictions.</p>
+
+	<p>The <b>turquoise lines</b> in the diagram indicate the expected dynamics of future R-values since the Forecast start date.</p>
+
+	<p>By changing the Forecast start date in the control panel (left side), the effective R-value for each 
+		previous calendar day can be called up. This date is then indicated by a <b>vertical ochre line</b> in the progression 
+		chart and in the field with the same colour underneath (set the slider accordingly).</p>
+
+	<p><i>Option (right lower corner):</i>: 
+		<br><br>
+		Using the <b>exponential smoothing function</b> allow for an illustration of the uncertainty 
+		of predicting future effective R-values. 
+		It displays likely trajectories as turquoise lines based on the variation of the 
+		effective R-values over the past 100 days. 
+		The number of trajectories corresponds to the Number of Run set in the control panel. 
+		
+		Include the effect of <b>Variants of Concern (VoC)</b> in the right lower corner.
+		<br>Activating this function allows to predict the displacement dynamics of VoC.
+		<br>Enter a historical date for which the proportion of VoC is known.
+		<br>In the next field, enter the proportion of VoC determined on that date.
+		<br>In the bottom field, enter the relative fitness advantage of the VoC (relative increase in transmissibility). 
+			In the default setting, the relative fitness advantage is set to 50%.</p>
+
+	<p>In the figure a <b>red line</b> appears above and a blue line below the recorded R-value estimates (black line).</p>
+
+	<p>The red line indicates the expected R-values, were the VoC proportion to make up 100% of the circulating pathogens.</p>
+
+	<p>The <b>blue line</b> indicates the R-values at a VoC proportion of 0%.</p>
+
+	<p>As a rule, with the emergence of VoC, the determined R-values (black line), deviate from the blue line and typically
+		converge on the red line, becoming congruent the moment the selective sweep is complete and conventional variants 
+		have been fully replaced.</p>
+
+
+	<p> Note: the results panel has an export button that allows to download the illustrated results as numerical values in a *.csv format</p>
+
+
+	<br>
+</div>
+<button type="button" class="collapsible">Vaccination</button>
+<div class="content">
+	<br>
+	<p>The graph in the results section illustrates the proportion (%) of the vaccinated population in the selected catchment over time.</p>
+
+	<p>The area in bright green shows the population who received the first dose, 
+	and in dark green those with a second dose.</p>
+	
+	<p>The dashed line increasing over time illustrates the proportion of the population 
+	with an immunity that protects from potential infectiousness, i.e. those who cannot 
+	transmit anymore to others. In the default setting dominance of the Delta-variant 
+	is assumed and levels of protection against infectiousness are set at 25% after 
+	the first dose and 55% after the second dose. With newly emerging variants, 
+	these variables need to be adjusted accordingly (see tab Parameters)</p>
+	
+	<p>The vertical dashed line indicates the Forecast start date and the 
+	number of started immunisations (first dose administrations) on that 
+	day are shown in the data field below. This number can be modified 
+	for optional scenario predictions. </p>
+
+	<p>For first vaccinations, the forecast assumes a constant increase, based on the vaccination rate of the <b>Forecast start date</b>
+	(represented by a 7-day moving average).</p>
+
+	<p>The forecast for the second vaccination takes the delay between the first and second dose on the <b>Forecast start date</b> 
+	into account and keeps this delay constant for the projection.</p>
+
+	<p>Values in bright and dark green shaded data fields report the proportion 
+	vaccinated on the start date and predict that proportion for the end 
+	of the forecast period for first and second dose vaccines.</p> 
+	<br>
+</div>
+<button type="button" class="collapsible">Incidence Forecast</button>
+<div class="content">
+	<br>
+	<p>The black line indicates the number of new cases reported daily (same as the blue line under the incidence tab).</p>
+
+	<p>The grey lines that project from the <b>Forecast start date</b> represent simulations 
+	based on the trajectories of effective R-values in the Eff.R (EpiEstim) tab. 
+	Orange shaded areas describe the probability distribution in percentiles 
+	of 95, 75, 25, and 5 percent for future case numbers for the Forecast length (days). 
+	The middle line corresponds to the median.</p>
+
+	<p>In the control panel (left side), the number of runs and <b>Forecast length (days)</b> can be adjusted.</p>
+
+	<p><b>Option</b>: Simulate weekly reporting pattern:
+	<br>
+	By activating this option, predictions will follow the historical weekly reporting pattern. This function allows for 
+	a more realistic illustration of the daily-expected number of cases.</p>
+
+	<p><b>Caution!</b>
+	<br>With long prediction intervals trends may be misleading. 
+	As a rule predictions that exceed more than 14 day should be taken 
+	with caution and become increasingly unreliable after 30 days. 
+	The model cannot anticipate changes in contact habits within 
+	the population (such as seasonal effects, school holidays, 
+	mass-gatherings, and non-pharmaceutical interventions). </p>
+
+	<br>
+</div>
+<button type="button" class="collapsible">Bed Forecast</button>
+<div class="content">
+	<br>
+
+	<p>The hospital bed forecast estimates the expected number Covid-19 
+	patients in ICUs (red line) and general wards (blue line). 
+	Colour shading indicates the percentile distributions of 95, 75, 25, and 5 percent. 
+	The lines correspond to the median.</p>
+
+	<p>The orange shaded field shows the proportion of newly recorded cases 
+	(previous day) that required hospitalisation on the selected Forecast start date.</p>
+
+	<p>The data field <b>Intensive care</b> shows the number of ICU beds occupied 
+	by Covid-19 patients as reported by the DIVI - Intensive Care Registry for
+	the selected start date and the selected catchment area.</p>
+
+	<p>The number of Covid-19 patients on <b>general wards</b> is calculated using a model based on the average Covid 19 patient-care-path 
+		ascertained at the Medical Center - University of Freiburg (see publication in the tab About).</p>
+
+	<p>Manual adjustment of Covid-19-specific occupancy rates for ICU and general ward(s) improves prediction for individual hospitals!</p>
+
+	<p>Activating the check box “Show only ICU results” improves readability of the figure.</p>
+
+	<p>Tertiary care hospitals often admit patients directly to the ICU. 
+	This proportion can be adjusted by activating the appropriate function.</p>
+
+	<p><b>Validation of Bed Forecast (highly recommended):</b><br>
+		<br>For all historical dates the observed daily bed-occupancy is displayed 
+		as full dots until the <b>Forecast start date</b>. 
+		When forecasts (e.g. for validity testing) are intended for historical 
+		calendar dates by resetting the date in the window 
+		<b>Select start data point</b>, observed bed-occupancy will remain visible 
+		as small circles and superimposed by the historical prediction 
+		from the selected start point.
+		
+		<br><br>
+		If validation of the predictions is desired, a file with the historical occupancy rates should be uploaded under the browse 
+		function.<br> 
+		This is a simple *.csv file with the following configuration:	
+		
+	</p>
+
+	<br>
+	<dl>
+		<dl>
+			<dd>
+			<table cellpadding="4" cellspacing="0">
+				<col >
+				<col >
+				<col >
+				<tr valign="top">
+					<td width="133" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p><b>Date</b></p>
+					</td>
+					<td width="59" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p><b>ICU</b></p>
+					</td>
+					<td width="75" style="border: 1px solid #000000; padding: 0.04in">
+						<p><b>Normal</b></p>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td width="133" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>2021-02-03</p>
+					</td>
+					<td width="59" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>18</p>
+					</td>
+					<td width="75" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+						<p>15</p>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td width="133" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>2021-02-04</p>
+					</td>
+					<td width="59" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>15</p>
+					</td>
+					<td width="75" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+						<p>18</p>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td width="133" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>...</p>
+					</td>
+					<td width="59" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>...</p>
+					</td>
+					<td width="75" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+						<p>...</p>
+					</td>
+				</tr>
+
+			</table>
+			</dl>
+		</dl>
+
+	<p>By resetting the date in the window <b>Select start data point</b>, forecasts can be calculated for any historical calendar day and
+		the predicted bed forecast compared with the occupancy rates observed (empty circles). 
+
+	<p><b>Caution!</b> If the forecast start date is set to more than 30 days in the past, you must adjust the forecast period in the control
+		panel (the default is set to 30 days) for the present dynamics to remain visible.
+
+	<p><b>Parameter choices</b><br>
+	<br>The selection of parameters (serial interval, expected vaccine efficacy, distributions and standard diviations) are based on most recent
+		accepted knowledge and will be updated accordingly. Date of recent update and reference publication are provided.
+	<br>The average duration of stay in normal wards and ICU are based on the Covid-19-specific patient-care-path ascertained at the Medical 
+		Center - University of Freiburg (see also publication in the tab "About").
+	<br>We recommend to modify the default setting only if necessary in order to adjust for individual health care settings.</p>
+
+
+	<p>GW = General Ward
+	<br>ICU = Intensive Care Unit
+	<br>SD = Step Down Unit</p>
+
+	<br>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

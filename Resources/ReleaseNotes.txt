@@ -1,0 +1,18 @@
+<br>
+<b>Release notes v0.5.6</b><br>
+<i>Bed observation update</i><br>
+<br>
+<br>
+Model: <br>
+- Loading of default general ward bed observations is now based on the data from the DKGEV and scaled by population sizes of the Landkreise. Missing data is imputed using the conversion factor from ICU beds to GW beds. <br>
+<br>
+UX/UI:<br>
+- Selection of startdate and selection of initial number of beds is now done with the same drop-down menu (on the left control panel). Manual adjustment of the number of initial beds occupied is still done in the bed forecast tab.<br>
+<br>
+Bugfixes:<br>
+- Fixed a bug caused by missing vaccination data.<br>
+- Fixed a bug in R forecast when forecast ended before the original dataset (affecting historical forecasts)<br>
+- Fixed the data stream from RKI after update of the data flow there.<br>
+<br>
+<br>
+

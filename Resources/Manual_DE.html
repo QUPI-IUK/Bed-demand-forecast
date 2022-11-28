@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+
+.collapsible {
+  background-color: #c9f7ff;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  border-radius: 12px;
+}
+
+.collapsible:hover {
+  background-color: #65b6c9;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f5f7f7;
+}
+
+div.p1 {
+	padding-left: 15px;
+}
+
+p.headline {
+	font-size: 16px;
+}
+
+.red {
+	color: red;
+	}
+
+.blue {
+	color: blue;
+	}
+	
+.green {
+	color: green;
+	}	
+	
+.gray {
+	color: gray;
+	}
+	
+.ocker {
+	color: #b88428;
+	}
+	
+ol, ul {
+	line-height:200%;
+{
+
+body {
+line-height:1.5;
+}
+
+</style>
+</head>
+<body>
+
+<!---
+<div>
+<p class="headline"><b>Einleitung</b></p>
+</div>
+<br>
+<div class="p1">
+	<div>
+	Das Analyse und Vorhersagetool Covid-19 des Universitätsklinikum Freiburg
+	</div>
+
+	<p>
+	Nach Hochladen der aktuellen Daten
+	<ul>
+	<li>des Robert-Koch-Instituts (RKI) und
+	<li>des Registers der Deutschen Interdisziplinären Vereinigung für Intensiv- und Notfallmedizin (DIVI-Intensivregister)
+	</ul>
+	stehen alle Funktionen zur Verfügung.
+	</p>
+	
+	<br>
+	<p>Die <b>Benutzeroberfläche</b> besteht aus zwei Bereichen: Dem <b>Steuerbereich</b> (linke Fläche) und dem <b>Ergebnisbereich</b> (rechte Seite).
+		<br>Der Ergebnisbereich wiederum gliedert sich in mehrere Register am oberen Rand (Fallzahlen, Effektiver R-Wert etc.).</p>
+
+	<p>Aufgrund der aufeinander aufbauenden Methoden empfehlen wir, bei jeder Analyse und Vorhersage die ersten vier Register
+		nacheinander von links nach rechts zu nutzen. Einzelne Register erlauben manuelles Verändern von Werten, was wiederrum
+		die Ergebnisse der darauf basierenden Register verändert. Beispiel: Eine Anpassung der Impfquote im Register "Impfungen"
+		wirkt sich auch auf die Kurve im Register "Fallzahlen-Vorhersage" aus, da dieser Faktor berücksichtigt wird.<br>
+	
+	<br>Eine Eingabe im Steuerbereich hat eine dynamische Anpassung der Ergebnisse zu Folge, 
+		eine neue Analyse muss also nicht manuell gestartet werden. 
+	
+	<br>Die Ergebnisregister sind mit einer individuell anpassbaren Zeitachse (x-Achse) versehen.
+	
+	<br><br>Untenstehend finden Sie detaillierte Erläuterungen zum Steuerbereich und den Ergebnisregistern.</p>
+
+	<br>
+</div>
+--->
+
+
+<div>
+<p class="headline"><b>Einleitung</b></p>
+</div>
+<br>
+<div class="p1">
+	<div>
+	Das Analyse und Vorhersagetool Covid-19 ist unter folgendem Link zu erreichen:
+	<p>
+	<a href="https://iuk-forecast.uniklinik-freiburg.de/">https://iuk-forecast.uniklinik-freiburg.de/</a><br>
+	</p>
+
+	Es öffnet sich zunächst eine Oberfläche in Englisch.
+	</div>
+
+	<p>Es erscheint ein Ladebalken im rechten unteren Bildrand (Fetching RKI
+		data…).</p>
+
+	<p>
+	Nach Hochladen der aktuellen Daten
+	<ul>
+	<li>des Robert-Koch-Instituts (RKI) und
+	<li>des
+	Registers der 	Deutschen
+	Interdisziplinären Vereinigung für Intensiv- und Notfallmedizin DIVI-Intensivregister
+	</ul>
+	schaltet die Oberfläche automatisch auf Deutsch um. Danach stehen alle Funktionen zur Verfügung.
+	</p>
+	
+	<br>
+
+	<p>Die <b>Benutzeroberfläche</b> besteht aus einem Steuerbereich (linke Fläche) und einem Ergebnisbereich (rechte Seite)</p>
+
+	<p>Bei der Smartphone-Anwendung sind diese Bereiche vertikal angeordnet.</p>
+
+	<p>Der Ergebnisbereich hat acht Register am oberen Rand.</p>
+
+	<p>Wir empfehlen, bei der Analyse und Vorhersage die ersten fünf Register
+		nacheinander von links nach rechts zu nutzen. <br><br><br>
+		
+	
+</div>
+
+<!---
+<button type="button" class="collapsible">Funktionsübersicht</button>
+<div class="content">
+	<br>
+	
+	<span><b>A) Steuerbereich</b> </span>
+	
+	<p>
+		<ol>
+			<li>Wählen Sie im Steuerbereich <b>Bundesländer und Landkreise</b> aus, für die Sie eine Vorhersage wünschen. 
+				<br>Alternativ können auch alle Bundesländer und/oder alle Landkreise zusammen für eine umfassendere Analyse ausgewählt werden. 
+			<li>Unter <b>Startzeitpunkt</b> können Sie vom aktuellsten Datum der RKI-Daten in die Vergangenheit den Beginn ihrer Vorhersage angeben.
+			<li>Unter <b>Länge der Vorhersage</b> benennen Sie den Zeitraum ab dem Startzeitpunkt, für den Sie die Vorhersage wünschen (Standard 30 Tage).
+			<li><b>Anzahl der Berechnungsdurchläufe</b> gibt die Wiederholungen der Simulation an (Standard 5 Durchläufe).
+			<br>
+		</ol>
+	</p>
+	
+	<div class="box">
+		<img src="GUI.PNG" alt="GUI" width="800px" border="1px dashed #f7a239">
+	</div>
+	<br>
+	
+	<span><b>B) Ergebnisbereich</b> </span>
+		<p>
+		<ul>
+			<li>
+				<b>Fallzahlen:</b>
+					<br> Dieses Register bildet den dokumentierten bisherigen Verlauf der Fallzahlen ab. 
+					<br> Die <span class="blue">blaue Linie</span> gibt die Tagesaktuelle Inzidenz an, wie sie zum jeweiligen Zeitpunkt an das RKI gemeldet wurde,
+						die <b>schwarze Linie</b> gibt den 7-Tages-Inzidenzwert pro 100.000 Einwohner an.
+					<br>
+					
+
+					<div class="box">
+						<img src="Incidence.PNG" alt="GUI" width="800px" border="1px dashed #f7a239">
+					</div>
+					<br>
+			<li>
+				<b>Effektiver R-Wert (EpiStim):</b>
+					<br> Dieses Register bildet sowohl den bisherigen Verlauf sowie zukünftige Vorhersagen über den R-Wert ab. 
+					<br> Die <b>schwarze Linie</b> stellt den mittleren R-Wert dar, während die graue Fläche das 95% Konfidenzintervall beschreibt (CI).
+					<br> Die <span class="red">rote Linie</span> markiert einen R-Wert von 1. Über- oder Unterschreiten dieser Schwelle spiegelt wieder wie sich	
+						die Fallzahlen zu dem jewiligen Zeitpunkt entwickelt haben bzw. werden.
+					<br>Die <span class="light blue">türkisen Linien</span> führen die simulierten R-Werte in die Zukunft fort.
+					<br>
+					<br><i>Optional:</i> 
+					<ul>
+						<li>Im Menü unten rechts können Sie über die Option <b>"Use exponential smoothing"</b> die Art der Prognosen des R-Werts umstellen; 
+							Somit können Sie zwischen der linearen Standardextrapolation und einer Variante, welche 
+							die vorherigen Trends berücksichtigt, umschalten.
+							
+						<li>Außerdem können Sie den Einfluss von "Variants of Concern" (Risikovarianten)
+										mit in die Berechnung einbeziehen. <br>Geben Sie dazu den zu einem bestimmten Datum bekannten Anteil
+										in der Gesamtpopulation der Fälle sowie den relativen Fitnessvorteil an.
+					</ul>				
+							
+					<div class="box">
+						<img src="RValue.PNG" alt="GUI" width="800px" border="1px dashed #f7a239">
+					</div>
+
+					<br>
+						
+			<li>
+				<b>Impfungen</b>
+					<br> Dieses Register zeigt <span class="green">akkumulierte Gesamtmenge</span> der erst- und zweitgeimpften Personen an. 
+						<br>Zusätzlich wird ab der vertikalen Linie eine Prognose über den weiteren Verlauf angezeigt, basierend auf der
+						 aktuellen Zahl der täglich verabreichten Erstdosen. 
+						 <br>Diese kann manuell angepasst werden um unterschiedliche Verläufe zu simulieren..
+					
+					<div class="box">
+						<img src="Vaccination.PNG" alt="GUI" width="800px" border="1px dashed #f7a239">
+					</div>
+
+					<br>
+						
+			<li>
+				<b>Fallzahlen-Vorhersage:</b>
+					<br> Dieses Register zeigt die bisher gemeldeten Fälle sowie eine <span class="ocker">
+						Prognose über die Fallzahlen (orange)</span>, 
+						basierend auf dem R-Wert und der Impfquote. <br> Der simulierte Melderhythmus an das RKI kann zusätzlich 
+						über die Kurve gelegt werden.
+					<div class="box">
+						<img src="IncidenceForecast.PNG" alt="GUI" width="800px" border="1px dashed #f7a239">
+					</div>
+
+					<br>
+					
+			<li>
+				<b>Betten-Prognose:</b>
+					<br> Die Betten-Prognose schätzt die zu erwartende Anzahl von Patienten mit Covid-19 auf 
+						<span class="red">Intensivstation</span> und <span class="blue">Normalstation</span>.
+						<br> Die Linien geben jeweils den Median an, während die schattierten Bereiche die 95., 75., 25., und 5. 
+						Perzentilen beschreiben. 
+						<br>Zusätzlich werden die in der Vergangenheit an das DIVI-Intensivregister gemeldeten Belegungszahlen als Punkte dargestellt.
+					<div class="box">
+						<img src="BedForecast.PNG" alt="GUI" width="800px" border="1px dashed #f7a239">
+					</div>
+					
+					Für eine Validerung der Vorhersagen (empfohlen) können Sie eine Datei mit dem historischen Belegungsverlauf hochladen.
+					<br> Dabei handelt es sich um eine einfache *.csv Datei mit folgender Konfiguration:					
+					<br>
+	<dl>
+		<dl>
+			<dd>
+			<table cellpadding="4" cellspacing="0">
+				<col >
+				<col >
+				<col >
+				<tr valign="top">
+					<td width="133" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p><b>Date</b></p>
+					</td>
+					<td width="59" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p><b>ICU</b></p>
+					</td>
+					<td width="75" style="border: 1px solid #000000; padding: 0.04in">
+						<p><b>Normal</b></p>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td width="133" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>2021-02-03</p>
+					</td>
+					<td width="59" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>18</p>
+					</td>
+					<td width="75" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+						<p>15</p>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td width="133" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>2021-02-04</p>
+					</td>
+					<td width="59" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>15</p>
+					</td>
+					<td width="75" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+						<p>18</p>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td width="133" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>...</p>
+					</td>
+					<td width="59" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>...</p>
+					</td>
+					<td width="75" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+						<p>...</p>
+					</td>
+				</tr>
+
+			</table>
+			</dl>
+		</dl>
+
+	
+
+					<br>
+		</ul>
+	</p>
+	
+</div>
+--->
+
+<button type="button" class="collapsible">Fallzahlen</button>
+<div class="content">
+  <br>
+  	<div class="box">
+		<img src="GUI.PNG" alt="GUI" width="800px" border="1px dashed #f7a239">
+	</div>
+	<br>
+  
+  <p><i><b>Auf dem linken Teil des Bildschirms:</b></i></p>
+		<p>
+		<ul>
+			<li>Wählen Sie im Steuerbereich ein Bundesland aus dem Menüvorschlag sowie die Landkreise des
+				Einzugsbereichs, für die Sie eine Vorhersage wünschen (LK = Landkreis, SK = Stadtkreis).
+				<br>Optional gestattet Ihnen die Selektion [Alle Bundesländer]/[Alle Kreise auswählen] auch bundes-
+				oder landesweite Vorhersagen.
+		</ul>
+		</p>
+
+		<p>Alle ausgewählten Bundesländer und Landkreise werden in den entsprechenden Feldern mit einem Häkchen markiert.</p>
+
+		<p>
+		<ul>
+		<li>Unter<b> Bevölkerung</b> wird die behördlich gemeldete Einwohnerzahl des ausgesuchten Einzugsbereichs angezeigt, 
+			daneben die entsprechende <b>Intensiv-Bettenbelegung (DIVI Register)</b>.
+
+		<li>Der <b>Startzeitpunkt</b> für ihre Vorhersage entspricht dem letzten Kalendertag für den RKI Meldedaten vorliegen
+			(gewöhnlich der Vortag). Dieser kann beliebig zurückdatiert werden.
+
+		<li>Auch kann die <b>Länge des Vorhersagezeitraums (in Tagen)</b> und die<b> Anzahl der Berechnungsdurchläufe (Simulationen)</b> eingestellt werden. 
+			Standardmäßig sind für die Länge des Vorhersagezeitraums 30 Tage und für die Zahl der Simulationen 5 Durchläufe eingestellt. 
+			Ein Maximum von 365 Tagen und 100 Berechnungsdurchläufen kann nicht überschritten werden.
+			</ul>
+		</p>
+		<p><span class="red"><i>Achtung!</i></span> Bei zu hohem Berechnungsvolumen, z.B. bundesweite Berechnungen mit Vorhersagezeiträumen über 365 Tagen und einer 
+			Anzahl von Simulationen mit mehr als 100 Berechnungsdurchläufen, wird die Einstellung automatisch begrenzt und auf 365 Tage und 
+			100 Berechnungsdurchläufe zurückgesetzt.
+		</p>
+
+		<p><i><b>Auf der rechten Seite des Bildschirms:</b></i></p>
+
+		<p>Im Ergebnisbereich erscheint das Resultat Ihrer Abfrage. Die <span class="blue"><b>blaue Linie</b></span> im Verlaufsdiagramm 
+			entspricht der <b>epidemiologischen Kurve</b> mit tagesaktuellen Zahlen der gemeldeten Neu-Infektionen für jeden Kalendertag. 
+			Die Skala für die gemeldeten Neu-Infektionen befindet sich auf der <i>linken y-Achse</i> des Verlaufsdiagramm.
+		<br>Die <b>schwarze Linie</b> bildet für jeden Kalendertag die <b>7-Tage-Inzidenz</b> (pro 100,000 Einwohner) ab. 
+			Die Skala hierfür befindet sich auf der <i>rechten</i> y-Achse.</p>
+
+		<p>Mit Hilfe des Gleitreglers unterhalb der Darstellung können Kalenderzeiträume eingegrenzt und vergrößert werden.</p>
+
+		<p>Unterhalb des Gleitreglers, im <span class="blue"><b>blau hinterlegten Feld </b></span>finden Sie die Anzahl der vom RKI für den Vortag gemeldeten 
+			<b>Neuinfektionen.</b></p>
+
+		<p>Das <span class="gray"><b>grau hinterlegte Feld</b></span> zeigt die aktuelle <b>7-Tage Inzidenz</b> (pro 100.000).</p>
+
+	<br>
+	
+	<div class="box">
+		<img src="Fallzahlen.PNG" alt="GUI" width="800px" border="1px dashed #f7a239">
+	</div>
+	<br>
+	
+</div>
+<button type="button" class="collapsible">Effektiver R-Wert (EpiStim)</button>
+<div class="content">
+
+	<br>
+	<p>Hier wird der Verlauf der effektiven R-Werte für jeden Kalendertag abgebildet.</p>
+
+	<p>Die <span class="gray"><b>senkrechte graue Linie</b></span> entspricht dem Datum des R-Wertes vom Vortag. Dieser Wert wird auch im 
+		<span class="gray">grau unterlegten Feld</span> bis auf zwei Dezimalstellen angegeben.</p>
+
+	<p>Zur Kompensation der RKI-abhängigen Meldeverzögerung, wird ein Nowcast R-Wert angegeben, der den gegenwartstypischen Schätzfehler
+		(durch Verzögerungen in der Meldekette) kompensiert. Der tagesaktuelle Nowcast R-Wert gilt als Basis für alle weiteren Vorhersagen.</p>
+
+	<p>Die <span class="blue">türkisfarbenen Linien</span> entsprechen dem erwarteten effektiven R-Wert für den angegebene Vorhersagezeitraum. 
+	Ihre Zahl entspricht der gewählten Anzahl von Berechnungsdurchläufen.</p>
+
+	<p>Durch wahlweise Veränderung des Startzeitpunkts im Steuerbereich (linke Seite), kann der effektive R-Wert für jeden vorangegangenen
+		Kalendertag aufgerufen werden.
+		Dieser wird dann durch eine <span class="ocker">senkrechte ockerfarbene Linie</span> im Verlaufsdiagramm und im gleichfarbig 
+		unterlegten Feld angezeigt.</p>
+
+	<br>
+	<p><i><b>Optionen im rechten unteren Bereich</b></i></p>
+
+	<p><b>Exponentielle Glättung anwenden:</b> Durch Aktivierung dieser Funktion wird die Unsicherheit bei der Vorhersage zukünftiger 
+		effektiver R-Werte abgebildet. 
+		Dabei werden mögliche Entwicklungskurven von R-Werten dargestellt, die sich aus der ermittelten Streuung der letzten 100 Tage 
+		zu ergeben könnten. 
+		Die Zahl der türkisfarbenen Entwicklungskurven entspricht der gewählten Anzahl von Berechnungsdurchläufen. 
+		
+		<br><br>
+		<b>Effekt der Variants of Concern (VoC)</b> 
+		<br>Die Aktivierung dieser Funktion ermöglicht Ihnen, die Verdrängungskinetik von besorgniserregenden Varianten (Variants of Concern, VoC) sichtbar zu machen.
+		Hier wird ein (historisches) Datum eingegeben, für welches der Anteil an VoC an der Grundgesamtheit von Neuinfektionen bekannt ist. 
+		Im darunterliegenden Feld wird dieser Anteil (in Prozent) für dieses Datum eingegeben. 
+		Im unteren Feld wird die erwartete Zunahme an Übertragungsfähigkeit (relative Fitnesszunahme) für die entsprechenden VoC eingegeben. In der Standardeinstellung beträgt die relative Fitnesszunahme 50%.
+
+
+	<p>Im Verlaufsdiagramm erscheint nun eine <span class="red">rote Linie</span> oberhalb und eine <span class="blue">blaue Linie</span> 
+		unterhalb der ermittelten R-Werte.</p>
+
+	<p>Die rote Linie entspricht den erwarteten R-Werten, würde der VoC Anteil hundert Prozent der zirkulierenden Erreger ausmachen.</p>
+
+	<p>Die blaue Linie entspricht den R-Werten bei einem VoC Anteil von null Prozent.</p>
+
+	<p>Die ermittelten R-Werte (schwarze Line) entfernen sich mit Auftreten besorgniserregender Varianten (VoC) regelhaft von der 
+		blauen Linie und konvergieren auf die rote Linie. Nach Vollendung der klonalen Verdrängung (selective sweep) sind die rote und schwarze Linie kongruent.</p>
+
+	<br>
+	
+	<div class="box">
+		<img src="RWert.PNG" alt="GUI" width="800px" border="1px dashed #f7a239">
+	</div>
+	<br>
+</div>
+<button type="button" class="collapsible">Impfungen</button>
+<div class="content">
+	<br>
+	<p>Im Verlaufsdiagramm bildet der <span class="green">hellgrüne Bereich</span> den Anteil (%) der Bevölkerung ab, der bis zum Datum des Startzeitpunkts (vertikale gestrichelte Linie) ein Erstimpfung erhalten hat.</p>
+
+	<p>Der <span class="green">dunkelgrüne Bereich</span> entspricht dem Bevölkerungsanteil mit gemeldeter Zweitimpfung. </p>
+	
+	<p>Die Vorhersage für weitere Erstimpfungen geht dabei von einer konstanten Impfquote (ab dem Startzeitpunkt) aus. Für die Vorhersage der Zweitimpfungen 
+		wird der zeitlichen Abstand zwischen Erst- und Zweitimpfung zum Startzeitpunkt konstant fortgeschrieben.<br>
+		Die unteren Datenfelder geben die exakten Prozentzahlen der farblich analogen Bereiche im Verlaufsdiagram (zum Startzeitpunkt) wieder. <br>
+		Ebenfalls können die erreichbaren Impfraten am Ender des Vorhersagezeitraums abgelesen werden. Dabei gilt die Annahme konstanter Impfquoten für die Erstimpfung und ein konstanter Zeitabstand zwischen Erst- und Zweitimpfung (ab Startzeitpunkt).
+	</p>
+
+	<p>Die gestrichelte Linie im Verlaufsdiagram stellt den Anteil der Bevölkerung dar, für den ein Schutz vor Ansteckungsfähigkeit angenommen wird. 
+		In der Standradeinstellung (siehe Parameter) werden für die dominierende Deltavariante 25% Schutz nach Erstimpfung und 55% Schutz vor Ansteckungsfähigkeit
+		nach Zweitimpfung vorgegeben. Bei neu auftretenden Varianten müssen diese Parameter angeglichen werden.</p>
+
+	<p>Das Datenfeld Anzahl begonnenen Immunisierungen pro Tag (Nur Erstimpfung) gibt die vom RKI täglich gemeldete Anzahl von Erstimpfungen zum Startzeitpunkt (als gleitender Durchschnitt der vergangenen 7 Tage) an.
+		Diese Zahl kann zum Zwecke einer Szenario-Simulation beliebig geändert werden.</p>
+
+	<br>
+	
+	<div class="box">
+		<img src="Impfungen.PNG" alt="GUI" width="800px" border="1px dashed #f7a239">
+	</div>
+	<br>
+</div>
+<button type="button" class="collapsible">Fallzahlen-Vorhersage</button>
+<div class="content">
+	<br>
+	<p>Hier bildet die schwarze Linie die tagesaktuellen Fallzahlen ab.</p>
+
+	<p>Die grauen Linien ab Startzeitpunkt sind simulationsbasierte 
+	Vorhersagen der zukünftigen Fallzahlen für den Vorhersagezeitraum. 
+	Die Standardeinstellung generiert 5 Simulationen entsprechend 5 zarte 
+	graue Linien für einen Vorhersagezeitraum von 30 Tagen. Unter Anwendung
+	der Exponentialverteilung werden die Unsicherheiten bei Vorhersagen mit
+	zunehmenden Vorhersagezeiträumen sichtbar. Die gelbunterlegte Linie 
+	entspricht der vorhergesagten Mediandynamik (=50%). 
+	Die Schattierungen geben die Perzentilen-Verteilung von 95, 75, 25, und 5 Prozent an. 
+
+</p>
+
+	<p><b>Option</b>: Wöchentlichen Melderhythmus simulieren:
+	<br>
+	Durch Aktivierung dieser Option werden die täglichen Vorhersagen dem historischen wöchentlichen 
+	Melderhythmus angepasst. Hierdurch ist eine realistischere Darstellung der täglich zu erwartenden Fallzahlen möglich.</p>
+
+	<p><b>Achtung!</b> Vorhersagen, die über einen Zeitraum von 14  Tagen hinausgehen sollten mit einer angemessenen 
+	Skepsis zu bewertet werden. Solche, die über 30 Tage hinausgehen sind 
+	zunehmend unzuverlässig. Veränderungen im Bevölkerungsverhalten 
+	(z.B. Einfluss von Jahreszeiten, Schulferien, Großveranstaltungen, 
+	und verordneten Kontaktbeschränkungen) können in der Vorhersage nicht 
+	abgebildet werden!</p>
+
+	<br>
+	<div class="box">
+		<img src="FallzahlenVorhersage.PNG" alt="GUI" width="800px" border="1px dashed #f7a239">
+	</div>
+	<br>
+
+</div>
+<button type="button" class="collapsible">Betten-Prognose</button>
+<div class="content">
+	<br>
+	<p>Die Betten-Prognose schätzt die zu erwartende Anzahl von Patienten mit Covid-19 auf <span class="red">Intensivstation (rote Linie)</span> und <span class="blue">Normalstation (blaue Linie)</span>.
+		Farbschattierungen geben die Perzentilen-Verteilung von 95, 75, 25, und 5 Prozent an. Die Linien entsprechen den Medianwerten.</p>
+
+	<p>Im <span class="ocker">orange unterlegten Feld</span> wird der Anteil der Neuerkrankten, die am ausgewählten Kalendertag stationär aufgenommen wurden, angegeben (Hospitalisierungsrate).</p>
+
+	<p>Die Standardeinstellung gibt die gemeldete Anzahl von Covid-19 Patienten auf Intensivstationen des DIVI-Intensivregisters für den ausgesuchten
+		Startzeitpunkt und Einzugsbereich an.</p>
+
+	<p>Die Anzahl der Covid-19 Patienten auf Normalstation errechnet sich dabei aus dem hinterlegen Model des durchschnittlichen Covid-19 
+		Versorgungspfads der Universitätsklinik Freiburg (siehe Publikation unter dem Register "Impressum").</p>
+
+	<p>Bessere Vorhersagen für individuelle Krankenhäuser sind möglich, wenn die vortägige Stationsbelegung manuell in den Feldern eingestellt wird!</i></p>
+
+	<p>Zur Verbesserung der Übersichtlichkeit lässt sich die Vorhersage für Normalstationen durch Aktivierung der Funktion “Nur Intensivzahlen anzeigen“ ausblenden.</p>
+
+	<p>Bei maximalversorgenden Krankenhäusern werden Patienten häufig direkt auf Intensivstationen aufgenommen. 
+	Diesen Anteil können Sie einstellen, nachdem Sie diese Funktion durch Anklicken aktivieren. 
+	</p>
+
+	<div class="box">
+		<img src="Betten.PNG" alt="GUI" width="800px" border="1px dashed #f7a239">
+	</div>
+	<br>
+
+	<p><b>Validierung der Betten Prognosen (wichtig):</b>
+	<br>
+	Die beobachtete (DIVI-dokumentierte) Bettenbelegung bis zum Startzeitpunkt wird für jeden Kalendertag durch farbige 
+	Punkte für den ausgewählten Einzugsbereich markiert. Vorhersagen für 
+	historische Kalendertage können (z.B. zur Validierung der Vorhersagen) 
+	durch ein Zurücksetzten des Datums im Fenster [Startpunkt aus 
+	Belegungsverlauf] berechnet werden. 
+	Dabei bleiben die täglichen (DIVI-dokumentierten) belegungszahlen 
+	als farbige u. leere Kreise weiterhin sichtbar, 
+	werden jedoch ab dem Startpunkt von der historischen 
+	Vorhersagekurve überlagert.</p>   
+
+Ist eine Validierung der Vorhersagen für individuelle Versorgungseinrichtungen angestrebt, sollte unter der Browse-Funktion eine Datei mit dem historischen Belegungsverlauf hochgeladen werden. Dabei handelt es sich um eine einfache *.csv Datei mit folgender Konfiguration: 
+
+	</p>
+
+	<br>
+	<dl>
+		<dl>
+			<dd>
+			<table cellpadding="4" cellspacing="0">
+				<col >
+				<col >
+				<col >
+				<tr valign="top">
+					<td width="133" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p><b>Date</b></p>
+					</td>
+					<td width="59" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p><b>ICU</b></p>
+					</td>
+					<td width="75" style="border: 1px solid #000000; padding: 0.04in">
+						<p><b>Normal</b></p>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td width="133" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>2021-02-03</p>
+					</td>
+					<td width="59" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>18</p>
+					</td>
+					<td width="75" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+						<p>15</p>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td width="133" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>2021-02-04</p>
+					</td>
+					<td width="59" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>15</p>
+					</td>
+					<td width="75" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+						<p>18</p>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td width="133" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>...</p>
+					</td>
+					<td width="59" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+						<p>...</p>
+					</td>
+					<td width="75" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+						<p>...</p>
+					</td>
+				</tr>
+
+			</table>
+			</dl>
+		</dl>
+
+
+	<p>Achtung! Wenn der Startpunkt über 30 Tage in der Vergangenheit liegt, müssen Sie den Vorhersagezeitraum im Steuerbereich anpassen, da dieser bei der 
+		Standardeinstellung (30 Tage) sonst zu kurz ist.</p>
+
+	<p><b>Parameterauwahl</b><br>
+		<br>Die Parameterauswahl (serial interval, expected vaccine efficacy, distribution und Standradabweichungen) richtet sich nach dem Forschungs- und 
+			Kenntnisstand zum Zeitpunkt regelmäßiger Updates. Datum des letzten Updates und Referenzpublikationen sind angegeben.
+		<br>Die durchschnittlichen Patienten-Verweildauern richten sich nach dem im Universitätsklinikum Freiburg beobachteten Covid-19 
+			spezifischen Versorgungspfad (siehe Publikation Donker et al, 2020 im Impressum). 
+		<br>Wir empfehlen, die Parameter gegebenenfalls für individuelle Krankenhäuser anzupassen.
+
+	<p>GW = General Ward
+	<br>ICU = Intensive Care Unit
+	<br>SD = Step Down Unit</p>
+	
+	<br>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

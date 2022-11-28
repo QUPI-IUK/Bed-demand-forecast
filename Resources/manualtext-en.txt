@@ -1,0 +1,16 @@
+Die Oberfläche wird nach dem Hochladen der aktuellen Daten des Robert Koch Instituts (RKI) und des Registers der Deutschen Interdisziplinären Vereinigung für Intensiv- und Notfallmedizin (DIVI-Intensivregister) automatisch auf Deutsch umschaltet. Sie können die Sprachauswahl über die Menüfläche mit dem Fähnchen ändern. Die Oberfläche gliedert sich in einen Steuerbereich (linke Seite) und einen Ergebnisbereich mit sieben Registern im oberen Bereich (rechte Seite).
+<br><br>
+<b><large>1. Fallzahlen</large></b>
+Wählen Sie im Steuerbereich ein Bundesland (nach Eingabe der ersten Buchstaben vom dem Menüvorschlag) aus und geben die Landkreise des Einzugsbereichs ein, für die Sie eine Vorhersage wünschen.
+<br><br>
+Optional gestattet Ihnen die Selektion (Alle Bundesländer/Kreise auswählen) auch bundes- oder landesweite Vorhersagen.
+<br><br>
+Unter <b>Bevölkerung</b> werden die behördlich gemeldeten Einwohnerzahlen des ausgesuchten Einzugsbereiches angezeigt.
+<br><br>
+Der <b>Startzeitpunkt</b> für ihre Vorhersage entspricht dem letzten Kalendertag für den Meldedaten vorliegen (gewöhnlich vom Vortag). Dieser kann aber beliebig zurückdatiert werden.
+<br><br>
+Die Standardeinstellung gibt die gemeldete Anzahl von Covid-19 Patienten auf <b>Intensivstationen</b> des DIVI Intensivregisters für den ausgesuchten Startzeitpunkt und Einzugsbereich an.
+<br><br>
+Die Anzahl der Covid-19 Patienten auf <b>Normalstation</b> errechnet sich aus dem hinterlegen Model (siehe Publikation unter Danksagung).
+<br><br>
+Startzeitpunkt, Belegung auf Normal- und Intensivstation können beliebig angepasst werden

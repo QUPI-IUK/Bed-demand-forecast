@@ -1,0 +1,34 @@
+<br>
+The dashboard and forecast methods have been developed at: <br><br>
+Institute for Infection Prevention and Hospital Hygiene<br>
+University Medical Center Freiburg<br>
+Freiburg im Breisgau<br>
+Germany<br><br>
+
+Questions and comments can be addressed to <a href="mailto:iuk.forecast@uniklinik-freiburg.de">iuk.forecast@uniklinik-freiburg.de</a>
+<br><br>
+Development team:<br><br>
+Dipl.-Math. Alexis Papathanassopoulos<br>
+Fabian Bürkin<br>
+Angelo d'Ambrosio<br>
+Stephan Hertweck<br>
+Raisa Kociurzynski<br>
+Dr. Tjibbe Donker<br>
+Prof. Dr. Hajo Grundmann<br>
+
+<br><br>
+In collaboration with:<br>
+University Medical Center Mannheim<br>
+University Medical Center Heidelberg<br>
+University Medical Center Ulm<br>
+University Medical Center Tübingen<br><br>
+Forecast methods are adapted from previously published methods and data:<br>
+Donker <i>et al.</i> (2020). <a href:https://www.cambridge.org/core/journals/infection-control-and-hospital-epidemiology/article/navigating-hospitals-safely-through-the-covid19-epidemic-tide-predicting-case-load-for-adjusting-bed-capacity/6D7E4D93419471B27BEA52AB1ECBD93D> Navigating hospitals safely through the COVID-19 epidemic tide: predicting case load for adjusting bed capacity</a> <i>Infection Control & Hospital Epidemiology</i>, 1-14. doi:10.1017/ice.2020.464<br><br>
+<br><br>
+The source code is available on <a href=https://github.com/Alexispap/CovidDashboardUKF>github</a>
+<br><br>
+Funding source: Ministerium für Wissenschaft, Forschung and Kunst (MWK) Baden-Württemberg<br><br>
+<br><br>
+<b>Data sources</b><br>
+
+

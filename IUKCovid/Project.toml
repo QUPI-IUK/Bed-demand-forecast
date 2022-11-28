@@ -1,0 +1,23 @@
+name = "IUKCovid"
+uuid = "6210121e-5ae5-4a67-844d-dc0e4ab7af03"
+authors = ["Angelo D'Ambrosio <bakaburg1@gmail.com>", "Georg-Alexis Papathanassopoulos <georg-alexis.papathanassopoulos@uniklinik-freiburg.de>", "Tjibbe Donker <tjibbe.donker@uniklinik-freiburg.de>"]
+version = "1.0.0"
+
+[deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+DataFramesMeta = "1313f7d8-7da2-5740-9ea0-a2ca25f37964"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+PackageCompiler = "9b87118b-4619-50d2-8e1e-99f35a4d4d9d"
+PrettyTables = "08abe8d2-0d0c-5749-adfa-8a2ac140af0d"
+SpecialFunctions = "276daf66-3868-5448-9aa4-cd146d93841b"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+ThreadTools = "dbf13d8f-d36e-4350-8970-f3a99faba1a8"
+
+[compat]
+DataFrames = "1.1.1"
+DataFramesMeta = "0.6.1"
+PackageCompiler = "1.7.6"
+SpecialFunctions = "1.5.1"
+ThreadTools = "0.2.0"
+julia = "1.6"

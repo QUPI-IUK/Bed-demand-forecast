@@ -1,0 +1,329 @@
+{
+  "languages": ["en", "de"],
+  "translation": [
+      {"en": "Manual", "de": "Anleitung"},
+      {"en": "Bed Forecast", "de": "Betten-Prognose"},
+      {
+        "en": "Incidence Forecast",
+        "de": "Fallzahlen-Vorhersage"
+      },
+      {
+        "en": "Eff. R (EpiEstim)",
+        "de": "Eff. R (EpiEstim)"
+      },
+      {
+        "en": "Incidence",
+        "de": "Fallzahlen"
+      },
+      {
+        "en": "Click to see the simulation options!",
+        "de": "Anklicken für Simulationsoptionen!"
+      },
+      {
+        "en": "Choose Bed Occupancy File",
+        "de": "Datei mit Bettenbelegung auswählen"
+      },
+      {
+        "en": "Analysis and Prediction Tool for COVID-19 Cases",
+        "de": "Analyse- und Vorhersagetool für COVID-19"
+      },
+      {
+        "en": "Fetching RKI data",
+        "de": "Lade RKI-Datensätze"
+      },
+      {
+        "en": "Select start data point",
+        "de": "Startpunkt aus Belegungsverlauf"
+      },
+      {
+        "en": "On this date",
+        "de": "An diesem Datum"
+      },
+      {
+        "en": "a VoC was present at this percentage",
+        "de": "betrug der Anteil an VoC"
+      },
+      {
+        "en": "with an additional transmissibility of",
+        "de": "mit einer erhöhten Übertragungfähigkeit von"
+      },
+      {
+      "en":"Vaccination results (double dose)",
+      "de":"Impfergebnisse (Zweitimpfung)"
+      },
+      {
+      "en":"Percentage vaccinated per day",
+      "de":"Bevölkerungsanteil mit Zweitimpfung pro Tag (Annahme 50% der tägl. Impfdosen)"
+      },
+      {
+      "en":"Vaccinated at the end of the simulation",
+      "de":"Impfquote am Ende der Simulation"
+      },
+      {
+      "en":"Include effect of Variant of Concern (VoC)",
+      "de":"Effekt der Variants of Concern (VoC)"
+      },
+      {
+      "en":"Everyone vaccinated by",
+      "de":"Gesamte Bevölkerung geimpft am"
+      },
+      {
+        "en":"Include age-specific hospitalisation risk reduction by vaccination. (Vaccination distributed old to young)",
+        "de": "Berücksichtigung des Impfeffekts (durch Priorisierung von Altersgruppen) auf die altersspezifische Hospitalisierungsrate"
+      },
+      {
+        "en": "Forecast start date",
+        "de": "Startzeitpunkt"
+      },
+      {
+        "en": "General ward",
+        "de": "Normalstation"
+      },
+      {
+        "en": "State:",
+        "de": "Bundesland:"
+      },
+      {
+        "en": "Select all districts",
+        "de": "Alle Kreise auswählen"
+      },
+      {
+        "en": "Select all states",
+        "de": "Alle Bundesländer auswählen"
+      },
+      {
+        "en": "Districts (RKI data):",
+        "de": "Landkreise (RKI-Datensatz):"
+      },
+      {
+      "en": "Compensated for reporting delay (nowcast)",
+      "de": "Kompensation der Meldeverzögerung (Nowcast)"
+      },
+      {"en": "Estimated vaccination coverage",
+       "de": "Geschätzte Impfquote"
+      },
+      {"en": "Vaccination coverage at end of the simulation (%)",
+       "de": "Impfquote am Ende der Vorhersage (%)"
+      },
+      {"en": "Average over selected states, weighted by county population size",
+      "de": "Durchschnitt über ausgewählte Bundesländer, gewichtet nach der Bevölkerungszahl des Landkreises"
+      },
+      {
+        "en": "Nowcast",
+        "de": "Nowcast"
+      },
+      {
+        "en": "GW",
+        "de": "NS"
+      },
+      {
+        "en": "ICU",
+        "de": "ITS"
+      },
+      {
+        "en": "Intensive care",
+        "de": "Intensivstation"
+      },
+      {
+        "en": "Daily number of cases (RKI)",
+        "de": "Tagesaktuelle Fallzahl (RKI)"
+      },
+      {
+        "en": "7 day incidence / 100 000 ",
+        "de": "7-Tages-Wert / 100 000"
+      },
+      {
+        "en": "7 day incidence / 100 000 (Nowcast)",
+        "de": "7-Tages-Wert / 100 000 (Nowcast)"
+      },
+      {
+        "en": "Last non-zero RKI incidence (per day)",
+        "de": "Letzte vorhandene RKI-Inzidenz (pro Tag) "
+      },
+      {
+        "en": "Last useful 7-day RKI incidence (per 100 000)",
+        "de": "Letzter sinnvoller 7-Tages-Wert RKI (pro 100 000)"
+      },
+      {
+        "en": "LGA and RKI confirmed cases",
+        "de": "Vom LGA und RKI bestätigte Fälle"
+      },
+      { "en": "Number of people vaccinated per day (single dose)",
+        "de": "Anzahl verabreichter Impfdosen pro Tag"
+      },
+      { "en": "Number of started immunisations per day (first doses)",
+        "de": "Anzahl begonnene Immunisierungen pro Tag (Nur Erstimpfung)"
+      },
+      { "en": "Number of booster immunisations per day",
+        "de": "Anzahl Booster pro Tag"
+      },
+      {
+        "en": "RKI confirmed cases",
+        "de": "Vom RKI bestätigte Fälle"
+      },
+      {
+        "en": "Date",
+        "de": "Datum"
+      },
+      {
+        "en": "Population size",
+        "de": "Bevölkerung"
+      },
+      {
+        "en": "Cases",
+        "de": "Fälle"
+      },
+      {
+        "en": "Confirmed cases",
+        "de": "Bestätigte Fälle"
+      },
+      {
+        "en": "Last useful eff. R Value based on RKI data",
+        "de": "Letzter sinnvoller effektiver R-Wert aus RKI-Daten"
+      },
+      {
+        "en": "Forecast R value based on RKI data",
+        "de": "Vorhersage R-Wert (aus RKI-Daten)"
+      },
+      {
+        "en": "Forecast using exponential smoothing",
+        "de": "Vorhersage mithilfe exponentieller Glättung"
+      },
+      {
+        "en": "Mean(R)",
+        "de": "Mittlerer R-Wert"
+      },
+      {
+        "en": "Mean",
+        "de": "Mittelwert"
+      },
+      {
+        "en": "from",
+        "de": "vom"
+      },
+      {
+        "en": "Occupied beds",
+        "de": "Belegte Betten"
+      },
+      {
+        "en": "Proportion cases admitted to hospital",
+        "de": "Anteil hospitalisierter Infizierter"
+      },
+      {
+        "en": "Include data from Landesgesundheitsamt (just for FR, BR, EM) ",
+        "de": "Daten des Landesgesundheitsamts anzeigen (nur FR, BR, EM)"
+      },
+      {
+        "en": "Show only ICU results",
+        "de": "Nur Intensivzahlen anzeigen"
+      },
+      {
+        "en": "Manually set direct ICU proportion",
+        "de": "Anteil an Intensivpatienten einstellen"
+      },
+      {
+        "en": "Forecast length (days)",
+        "de": "Länge der Vorhersage (in Tagen)"
+      },
+     {
+        "en": "Forecast",
+        "de": "Vorhersage"
+      },
+      {
+        "en": "Reported",
+        "de": "Gemeldete"
+      },
+      {
+        "en": "Individual runs",
+        "de": "Individuelle Berechnungsdurchläufe"
+      },
+      {
+        "en": "Number of Runs",
+        "de": "Anzahl Berechnungsdurchläufe"
+      }, 
+      {
+        "en": "Direct ICU proportion",
+        "de": "Anteil direkter Intensivaufnahmen"
+      },
+      {
+        "en": "About",
+        "de": "Impressum"
+      },
+      {
+        "en":"ICU bed occupancy (DIVI registry)",
+        "de":"Intensivbetten-Belegung (DIVI Register)"
+      },
+      {
+        "en": "Parameter choices",
+        "de": "Parameterauswahl"
+      },
+      {
+        "en": "35 cases /100.000 /7 days",
+        "de": "35 Fälle /100.000 /7 Tage"
+      },
+      {
+        "en": "Rt estimation method",
+        "de": "Methode zur Rt-Schätzung"
+      },
+      {
+        "en": "IQR & 95% Range",
+        "de": "IQR & 95% Bereich"
+      },
+      {
+        "en": "Resources/Manual_EN.html",
+        "de": "Resources/Manual_DE.html"
+      },
+      {
+        "en": "1. vaccination",
+        "de": "Erstimpfung"
+      },
+      {
+        "en": "Full vaccination",
+        "de": "Vollständig geimpft"
+      },
+      {
+        "en": "Booster vaccination",
+        "de": "Booster Impfung"
+      },
+      {
+        "en": "Vaccinations",
+        "de": "Impfungen"
+      },
+      {
+        "en": "Proportion of vaccinations in %",
+        "de": "Anteil in Prozent %"
+      },
+      {
+        "en": "Proportion of the population who receive single vaccination dose",
+        "de": "Erstimpfung (Anteil der Bevölkerung)"
+      },
+      {
+        "en": "Proportion of the population fully vaccinated",
+        "de": "Vollständig geimpft (Anteil der Bevölkerung)"
+      },
+      {
+        "en": "Start of the simulation",
+        "de": "Start der Simulation"
+      },
+      {
+        "en": "End of the simulation",
+        "de": "Ende der Simulation"
+      },
+      {
+        "en": "Projected population-based protection",
+        "de": "Impfschutz vor Übertragung Gesamtbevölkerung"
+      },
+      {
+        "en": "Simulate weekly reporting pattern",
+        "de": "Wöchentlichen Melderhythmus simulieren"
+      },
+      {
+        "en": "Vaccination",
+        "de": "Impfungen"
+      },
+      {
+        "en": "Use exponential smoothing",
+        "de": "Exponentielle Glättung anwenden"
+      }
+    ]
+}

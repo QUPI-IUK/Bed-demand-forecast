@@ -1,0 +1,320 @@
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Arial, serif"><font size="3" style="font-size: 12pt">
+Die Oberfläche wird nach dem Hochladen der aktuellen Daten des Robert Koch Instituts (RKI) und des Registers der Deutschen Interdisziplinären Vereinigung für Intensiv- und Notfallmedizin (DIVI-Intensivregister) automatisch auf Deutsch umschaltet. Sie können die Sprachauswahl über die Menüfläche mit dem Fähnchen ändern. Die Oberfläche gliedert sich in einen Steuerbereich (linke Seite) und einen Ergebnisbereich mit sieben Registern im oberen Bereich (rechte Seite).
+</font></font></p><br>
+
+
+<ol>
+<font face="Arial, serif">
+<font size="3" style="font-size: 12pt">
+	<li/>
+<p style="margin-bottom: 0in; line-height: 100%">
+<b>Fallzahlen</b>
+</ol>
+<p style="margin-left: 0.5in; margin-bottom: 0in; line-height: 100%">
+Wählen Sie im Steuerbereich ein Bundesland (nach Eingabe der ersten
+Buchstaben vom dem Menüvorschlag) aus und geben die Landkreise des
+Einzugsbereichs ein, für die Sie eine Vorhersage wünschen.
+</p>
+
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+Optional gestattet Ihnen die Selektion (Alle Bundesländer/Kreise auswählen)
+auch bundes- oder landesweite Vorhersagen.
+</p>
+
+<br/>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+Unter <b>Bevölkerung</b> werden die behördlich gemeldeten Einwohnerzahlen des ausgesuchten
+Einzugsbereiches angezeigt.</p>
+
+<br/>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+Der <b>Startzeitpunkt</b>für ihre Vorhersage entspricht dem letzten Kalendertag für den
+Meldedaten vorliegen (gewöhnlich vom Vortag). Dieser kann aber
+beliebig zurückdatiert werden.</p>
+
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+</p>
+
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+Die Standardeinstellung gibt die gemeldete Anzahl von Covid-19 Patienten
+auf <b>Intensivstationen</b> des DIVI Intensivregisters für den ausgesuchten Startzeitpunkt und
+Einzugsbereich an.</p>
+
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+</p>
+
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+Die Anzahl der Covid-19 Patienten auf <b>Normalstation</b> errechnet sich aus dem hinterlegen Model (siehe Publikation unter
+Danksagung).</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+Startzeitpunkt, Belegung auf Normal- und Intensivstation können beliebig angepasst
+werden</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+</p>
+
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<font face="Arial, serif"><font size="2" style="font-size: 10pt">Über
+die Funktion Einstellungen (Zahnrad) können Sie die Anzahl der
+Simulationen (Berechnungsdurchläufe) und die Länge der
+Vorhersagezeit sowie die (erwartete) Impfquote am Ende des
+Vorhersagezeitpunktes einstellen. Als Standardeinstellung wird hier
+der Anteil der geimpften Bevölkerung (nach der 2. Impfung) zum
+Startzeitpunkt angegeben. Bei maximalversorgenden Krankenhäusern
+wird ein Anteil der Patienten direkt auf Intensivstationen
+aufgenommen. Diesen Anteil sollten Sie hier einstellen.</font></font></p>
+
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+</p>
+
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+Das Resultat Ihrer Abfrage wird auf dem rechten Teil des Bildschirms
+abgebildet. Die blaue Linie entspricht der epidemiologischen Kurve
+mit tagesaktuellen Zahlen der gemeldeten Infektionen für jeden
+Kalendertag. Die Skala der blauen Kurve befindet sich auf der linken
+Seite der Darstellung. Die schwarze Linie bildet für jeden
+Kalendertag die 7-Tage Inzidenz ab. Dafür befindet sich die Skala
+auf der rechten Seite der Darstellung Die horizontale Linie bildet
+die Wocheninzidenz von 35 Neuinfektionen ab. Im blau unterlegten Feld
+die Anzahl der von RKI für den Vortag gemeldeten Neuinfektionen, im
+grau unterlegten Feld die aktuelle 7-Tage Inzidenz und im grün
+unterlegten Feld die Impfquote nach 2. Impfung für das ausgewählte
+Bundesland/die ausgewählten Bundesländer. Mit Hilfe des
+Gleitreglers unter der Darstellung können sie Kalenderzeiträume
+eingrenzen und vergrößern.</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+</font></font>
+<ol start="2">
+	<li/>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>Effektiver
+	R-Wert (EpiEstim)</b></font></font></p>
+</ol>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt">Hier
+wird der Verlauf der effektiven R-Werte für jeden Kalendertag
+abgebildet. Die senkrechte graue Linie entspricht dem Datum des
+R-Wertes vom Vortag. Dieser Wert wird auch im grau unterlegten Feld
+bis auf zwei Dezimalstellen genau beziffert. Darüber hinaus wird zur
+Kompensation der RKI-abhängigen Meldeverzögerung ein Nowcast R-Wert
+angegeben, der den gegenwartstypischen Schätzfehler (durch
+Verzögerungen in der Meldekette) kompensieren soll. Diese R-Wert
+Simulation ist auch für die letzten Vorhersagetage bei sehr tiefem
+Eingrenzen des letzten Kalenderzeitraues ersichtlich. Hierzu
+verwenden Sie den Gleitregler.</font></font></p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt">Darüber
+hinaus kann wahlweise durch Veränderung des Startzeitpunkts der
+effektiven R-Wert für jeden Kalendertag rückwirkend aufgerufen
+werden. Dieser wird dann durch eine senkrechte ockerfarbige Linie und
+im gleichfarbig unterlegten Feld angezeigt.</font></font></p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="text-indent: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<ol start="3">
+	<li/>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>Fallzahlen-Vorhersage</b></font></font></p>
+</ol>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt">Hier
+bildet die schwarze Linie die tagesaktuellen Fallzahlen ab. Die
+zarten grauen Linien ab dem Startzeitpunkt sind simulationsbasierte
+Vorhersagen der zukünftigen Fallzahlen für die Länge des
+Vorhersagezeitraums. Die Standardeinstellung generiert 5 Simulationen
+für einen Vorhersagezeitraum von 30 Tagen. Grün unterlegt ist die
+Quartilen-Verteilung. Die hellgrüne Linie entspricht der
+vorhergesagten Mediandynamik. </font></font>
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt">Unter
+Einstellungen (Zahnrad) kann der Vorhersagezeitraum und die Anzahl
+der Simulationen beliebig variiert werden. Cave! Vorhersagezeiträume
+gehen von konstanten R-Werten aus. Bei langen Vorhersagezeiträume
+wird hier der Trend bei unveränderten Annahmen abgebildet. Eine hohe
+Anzahl von Berechnungsdurchläufen führt zur einer Verlangsamung der
+Vorhersagen. Bei 25 Durchläufen verzögert sich die Betten-Prognose
+um 5 -10 Sekunden.</font></font></p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<ol start="4">
+	<li/>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>Betten-Prognose</b></font></font></p>
+</ol>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt">Die
+Betten-Prognose schätzt die zu erwartende Anzahl von Patienten mit
+Covid-19 auf Normalstationen (blaue Linie) und Intensivstationen
+(rote Linie) ab. Farbschattierungen geben die Perzentilen von 95, 75,
+25, und 5 Prozent an. Die Linien entsprechen den Medianwerten.</font></font></p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt">Die
+Betten-Prognose geht in der Standardeinstellung von der Anzahl von
+Covid-19 erkrankten Intensivpatienten des DIVI Intensivregisters vom
+Vortag aus. Die Anzahl der Covid-19 Patienten auf Normalstation
+errechnet sich dabei aus dem hinterlegen Model (siehe Publikation
+unter Danksagung). </font></font>
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt">Bessere
+Vorhersagen für individuelle Krankenhäuser sind möglich, wenn die
+vortägigen Stationsbelegung händisch eingestellt wird und (unter
+Einstellungen, Zahnrad) der Anteil von Patienten die typischerweise
+direkt auf Intensivstationen aufgenommen werden über den Gleitregler
+angegeben wird. </font></font>
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt">Ist
+eine Möglichkeit zur Validierung angestrebt, sollte unter der
+Browse-Funktion eine Datei mit dem historischen Belegungsverlauf
+hochgeladen werden. Dabei handelt es sich um ein einfache .csv Datei
+mit folgender Konfiguration:</font></font></p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax">Date</th>
+    <th class="tg-0lax">ICU</th>
+    <th class="tg-0lax">Normal</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">2021-02-02</td>
+    <td class="tg-0lax">18</td>
+    <td class="tg-0lax">15</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">2021-02-03</td>
+    <td class="tg-0lax">15</td>
+    <td class="tg-0lax">18</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">2021-02-04</td>
+    <td class="tg-0lax">15</td>
+    <td class="tg-0lax">18</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">2021-02-05</td>
+    <td class="tg-0lax">15</td>
+    <td class="tg-0lax">17</td>
+  </tr>
+</tbody>
+</table>
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt">Durch
+ein Zurücksetzen des Datums im Fenster </font></font><font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>Startpunkt
+aus Belegungsverlauf<!-- Needs to be adjusted --></b></font></font><font face="Arial, serif"><font size="3" style="font-size: 12pt">
+können Vorhersagen für jeden historischen Kalendertag berechnet
+werden und die vorhergesagte Betten-Prognose mit den beobachteten
+Belegzahlen (leere Kreise) verglichen werden. Diese Funktion
+gestattet auf diese Weise eine Validierung des Vorhersagetools. </font></font>
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.49in; margin-bottom: 0in; line-height: 100%">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt">Im
+orange unterlegten Feld wird der Anteil der Neuerkrankten, die am
+ausgewählten Kalendertag stationär aufgenommen wurden angegeben.</font></font></p>
+<br>
+<ol start="5">
+	<li/>
+<p style="margin-bottom: 0in; line-height: 100%"><font face="Arial, serif"><font size="3" style="font-size: 12pt"><b>Parameterauswah</b></font></font><font face="Arial, serif"><font size="3" style="font-size: 12pt">l</font></font></p>
+</ol>
+<p style="margin-left: 0.5in; margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-left: 0.5in; margin-bottom: 0in; line-height: 100%"><font face="Arial, serif"><font size="3" style="font-size: 12pt">Die
+Parameterauswahl richtet sich nach dem im Universitätsklinikum
+Freiburg beobachteten Covid-19 spezifischem Versorgungspfad (siehe
+Publikation Donker et al, 2020 in der Danksagung). Wir empfehlen, die
+Parameter nur in begründeten Fällen zu modifizieren. </font></font>
+
+</p>
+<p style="margin-left: 0.5in; margin-bottom: 0in; line-height: 100%"><br/>
+</p>
+
+<p style="margin-left: 0.5in; margin-bottom: 0in; line-height: 100%"><font face="Arial, serif"><font size="3" style="font-size: 12pt"><span lang="en-GB">GW
+= Normalstation</span></font></font></p>
+<p style="margin-left: 0.5in; margin-bottom: 0in; line-height: 100%"><font face="Arial, serif"><font size="3" style="font-size: 12pt"><span lang="en-GB">ICU
+= Intensivstation</span></font></font></p>
+<p style="margin-left: 0.5in; margin-bottom: 0in; line-height: 100%"><font face="Arial, serif"><font size="3" style="font-size: 12pt"><span lang="en-GB">SD
+= Step Down Unit</span></font></font></p>

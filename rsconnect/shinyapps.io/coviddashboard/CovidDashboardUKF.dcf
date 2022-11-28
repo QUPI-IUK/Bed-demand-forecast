@@ -1,0 +1,13 @@
+name: CovidDashboardUKF
+title: CovidDashboardUKF
+username:
+account: coviddashboard
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3539186
+bundleId: 4230294
+url: https://coviddashboard.shinyapps.io/CovidDashboardUKF/
+when: 1613488532.34849
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .gitattributes
